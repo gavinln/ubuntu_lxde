@@ -75,4 +75,3 @@ Vagrant. The Git environment also provides an [SSH  client][6] for Windows.
 [7]: https://www.virtualbox.org/
 [8]: http://vagrantup.com/
 [9]: http://git-scm.com/
-
