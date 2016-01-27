@@ -14,7 +14,7 @@ class dev {
     class {
         init: ;
         lxde: require => Class[init];
-        guest_additions: require => Class[lxde];
+#        guest_additions: require => Class[lxde];
     }
 }
 
