@@ -20,12 +20,22 @@ class init {
                 ];
             }
             # java and other utilities
-            $misc_packages = ["git-core"]
+            $misc_packages = ["git-core", "tmux", "terminator", "tree",
+                "silversearcher-ag"]
             package { $misc_packages:
                 ensure => present,
                 require => [
                     Exec['update_apt'],
                 ];
+            }
+            package { 'autojump':
+                ensure => present,
+                require => Exec['update_apt'];
+            }
+            file { '/etc/profile.d/autojump.sh':
+                ensure => present,
+                source => '/usr/share/autojump/autojump.sh',
+                require => Package['autojump']
             }
         }
     }

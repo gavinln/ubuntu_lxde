@@ -17,11 +17,6 @@ sudo apt-get install fonts-inconsolata
 Multi window terminal
 sudo apt-get install Terminator
 
-Install restricted extras
-sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
-sudo apt-get update
-sudo apt-get install lubuntu-restricted-extras
-
 List plugins
 vagrant plugin list
 
@@ -37,6 +32,15 @@ See https://github.com/junegunn/fzf
 SQL on text files
 See https://github.com/dinedal/textql
 
-Interactive filtering
-See https://github.com/peco/peco
+Ag (like grep)
+sudo apt-get install silversearcher-ag
+
+./gotty tmux new -A -s bash "bash"
+vim $(ag -l class | fzf)
+
+Install gvim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+wget https://raw.githubusercontent.com/gavinln/vimrc/master/vimrc.vim
+mv vimrc.vim ~/.vimrc
+
 
