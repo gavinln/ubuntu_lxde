@@ -49,3 +49,6 @@ mv vimrc.vim ~/.vimrc
 
 wget https://github.com/facebook/PathPicker/releases/download/0.7.0/fpp.0.7.0.tar.gz
 mv fpp.0.7.0.tar.gz fpp.0.7.0.tar
+
+Git terminal ui
+https://github.com/jonas/tig
