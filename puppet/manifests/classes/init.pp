@@ -21,7 +21,8 @@ class init {
             }
             # java and other utilities
             $misc_packages = ["git-core", "tmux", "terminator", "tree",
-                "silversearcher-ag"]
+                "silversearcher-ag", "fonts-inconsolata", "vim-gtk",
+                ]
             package { $misc_packages:
                 ensure => present,
                 require => [

@@ -14,6 +14,7 @@ class dev {
     class {
         init: ;
         lxde: require => Class[init];
+        python_setup: require => Class[init];
         fzf: ;
         gotty: ;
 #        guest_additions: require => Class[lxde];

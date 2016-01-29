@@ -2,6 +2,8 @@ Install guest additions to automatically guest resolution when host window chang
 
 make sure that vagrant-vbguest plugin is not installed
 
+
+
 Copy file using scp to the home directory using ssh
 scp -P 2200 file_to_copy vagrant@near-machine:~
 
@@ -15,7 +17,9 @@ Install inconsolata font
 sudo apt-get install fonts-inconsolata
 
 Multi window terminal
-sudo apt-get install Terminator
+sudo apt-get install terminator
+
+Click the "right mouse button" and select "preferences and then xelect profiles/command and check "Run command as login shell"
 
 List plugins
 vagrant plugin list
@@ -43,4 +47,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 wget https://raw.githubusercontent.com/gavinln/vimrc/master/vimrc.vim
 mv vimrc.vim ~/.vimrc
 
-
+wget https://github.com/facebook/PathPicker/releases/download/0.7.0/fpp.0.7.0.tar.gz
+mv fpp.0.7.0.tar.gz fpp.0.7.0.tar
